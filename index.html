@@ -17,22 +17,31 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
+      min-height: 100vh;
       margin: 0;
       padding: 20px;
+      box-sizing: border-box;
     }
     .container {
       max-width: 600px;
+      width: 100%;
       text-align: left;
     }
     h1 {
-      font-size: 24px;
+      font-size: clamp(1.5rem, 4vw, 2rem);
+      margin-bottom: 1rem;
+    }
+    p {
+      font-size: clamp(1rem, 2.5vw, 1.125rem);
+      margin-bottom: 1.5rem;
     }
     a {
       color: black;
       text-decoration: underline;
       display: block;
       margin-bottom: 10px;
+      font-size: clamp(1rem, 2.5vw, 1.125rem);
+      word-wrap: break-word;
     }
   </style>
 </head>
